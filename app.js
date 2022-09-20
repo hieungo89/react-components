@@ -8,11 +8,11 @@ const TodoListItem = (props) => {
   };
 
   return (
-      <li style={style} onClick={() => setIsDone(!isDone)}
+    <li style={style} onClick={() => setIsDone(!isDone)}
       onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
       onMouseOut={(e) => e.target.style.fontWeight = 'normal'}>
-        {props.todo}
-      </li>
+      {props.todo}
+    </li>
   );
 };
 
@@ -33,4 +33,4 @@ const App = () => (
   </div>
 )
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
